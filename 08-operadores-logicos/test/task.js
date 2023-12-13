@@ -1,25 +1,23 @@
 // </ #9 Operadores de Lógicos />
-
 /*
   Ejercicio #1
   Realiza los siguientes ejercicios de operadores lógicos
   Reeplaza null por el valor correspondiente en cada operación
 */
-
 // null || false || 'hola' || 23 || 'string' || 0
-const ejemplo1 = 'hola'; 
+const ejemplo1 = null
 
 // 0 && false && 'hola' && 23 && 'string' && 0
-const ejemplo2 = 0;
+const ejemplo2 = null
 
 // null || 0 || '' || false
-const ejemplo3 = false; 
+const ejemplo3 = null
 
 // '0' && true && 25 && 'null'
-const ejemplo4 = 'null'; 
+const ejemplo4 = null
 
 // '' || 25 && 'hola' || true
-const ejemplo5 = 'hola'; 
+const ejemplo5 = null
 
 /*
   Ejercicio #2
@@ -29,17 +27,13 @@ const ejemplo5 = 'hola';
   No debes crear otras variables (a menos que los requieras). Utiliza los parámetros que reciben las funciones.
   Recuerda utilizar return para devolver valores.
 */
-
 function puedeIngresarAlPais (visa, pasaporte) {
   // La función recibe dos booleanos, visa y pasaporte, OJO!!! ambos son requeridos.
   // Si visa y pasaporte son true, retorna true.
   // De lo contrario, retorna false.
   // Ejemplo: in: (visa: true, pasaporte: true) ~ out: => true
   // Tu código:
-  return visa && pasaporte; 
-
 }
-
 function puedeIngresarAlEvento (edad, permiso) {
   // La función recibe dos booleanos, edad y permiso
   // Para ingresar a un evento, la edad debe ser mayor o igual a 18, o tener permiso de un adulto.
@@ -48,7 +42,6 @@ function puedeIngresarAlEvento (edad, permiso) {
   // Tu código:
   return edad >= 18 || permiso;
 }
-
 function mensajeDeBienvenida (nombre) {
   // La función recibe un string, nombre.
   // Tu labor es retornar un mensaje de bienvenida, si el nombre es válido. De lo contrario, retornar un mensaje con el nombre como 'visitante'.
@@ -57,7 +50,6 @@ function mensajeDeBienvenida (nombre) {
   // Tu código:
   return 'Bienvenido ' + (nombre || 'visitante');
 }
-
 // NO TOCAR ESTE CÓDIGO
 module.exports = {
   ejemplo1,
