@@ -33,13 +33,11 @@ function sonIguales (num1, num2) {
   // Ejemplo: in: (num1: 18, num2: 18) ~ out: => true
   // Tu código:
   return (num1 == num2)
-  return (num1 == num2)
 }
 function tienenMismaLongitud (str1, str2) {
   // Retorna true si las dos strings tienen el mismo largo, de lo contrario, retorna false.
   // Ejemplo: in: (str1: 'hi', str2: 'ha') ~ out: => true
   // Tu código:
-  return (str1.length == str2.length)
   return (str1.length == str2.length)
 }
 function menosQueNoventa (num) {
@@ -47,28 +45,27 @@ function menosQueNoventa (num) {
   // Ejemplo: in: (num: 89) ~ out: => true
   // Tu código:
   return (num < 90)
-  return (num < 90)
 }
 function mayorQueCincuenta (num) {
   // Retorna true si num es mayor que cincuenta, de lo contrario, retorna false.
   // Ejemplo: in: (num: 49) ~ out: => false
   // Tu código:
   return (num > 50)
-  return (num > 50)
+
 }
 function esPar (num) {
   // Retorna true si num es par, de lo contrario, retorna false.
   // Ejemplo: in: (num: 8) ~ out: => true
   // Tu código:
   return (num % 2 === 0)
-  return (num % 2 === 0)
+
 }
 function esImpar (num) {
   // Retorna true si num es impar, de lo contrario, retorna false.
   // Ejemplo: in: (num: 7) ~ out: => true
   // Tu código:
   return (num % 2 !== 0)
-  return (num % 2 !== 0)
+
 }
 // NO TOCAR ESTE CÓDIGO
 module.exports = {
