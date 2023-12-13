@@ -7,19 +7,19 @@
 */
 
 // null || false || 'hola' || 23 || 'string' || 0
-const ejemplo1 = null
+const ejemplo1 = 'hola'; 
 
 // 0 && false && 'hola' && 23 && 'string' && 0
-const ejemplo2 = null
+const ejemplo2 = 0;
 
 // null || 0 || '' || false
-const ejemplo3 = null
+const ejemplo3 = false; 
 
 // '0' && true && 25 && 'null'
-const ejemplo4 = null
+const ejemplo4 = 'null'; 
 
 // '' || 25 && 'hola' || true
-const ejemplo5 = null
+const ejemplo5 = 'hola'; 
 
 /*
   Ejercicio #2
@@ -36,6 +36,8 @@ function puedeIngresarAlPais (visa, pasaporte) {
   // De lo contrario, retorna false.
   // Ejemplo: in: (visa: true, pasaporte: true) ~ out: => true
   // Tu código:
+  return visa && pasaporte; 
+
 }
 
 function puedeIngresarAlEvento (edad, permiso) {
@@ -44,6 +46,7 @@ function puedeIngresarAlEvento (edad, permiso) {
   // Si no tiene la edad requerida y tampoco el permiso, retorna false.
   // Ejemplo: in: (edad: 20, permiso: true) ~ out: => true
   // Tu código:
+  return edad >= 18 || permiso;
 }
 
 function mensajeDeBienvenida (nombre) {
@@ -52,6 +55,7 @@ function mensajeDeBienvenida (nombre) {
   // Ejemplo: in: (nombre: 'Juan') ~ out: => 'Bienvenido Juan'
   // Ejemplo: in: () ~ out: => 'Bienvenido visitante'
   // Tu código:
+  return 'Bienvenido ' + (nombre || 'visitante');
 }
 
 // NO TOCAR ESTE CÓDIGO

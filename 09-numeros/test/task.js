@@ -7,16 +7,16 @@
 */
 // Utiliza la notación exponencial para representar los siguientes números:
 // Notación exponencial de: 100000 => ??
-const example1 = null
+const example1 = 1e5; 
 
 // Notación exponencial de: 85000000000 => ??
-const example2 = null
+const example2 = 8.5e10
 
 // Notación exponencial de: 0.0025 => ??
-const example3 = null
+const example3 = 2.5e-3
 
 // Notación exponencial de: 0.000001 => ??
-const example4 = null
+const example4 = 1e-6
 
 // Algo está mal con el siguiente código, ¿puedes arreglarlo?
 const entero = '256.5px' // No puedes modificar esta línea
@@ -55,18 +55,23 @@ function validarNumero (numero) {
   // Ejemplo: in: (numero: 1) ~ out: => false
   // Ejemplo: in: (numero: NaN) ~ out: => true
   // Tu código:
+  return isNaN(numero);
 }
 
 function numeroRandom (inicio, final) {
   // La función recibe dos números y debe devolver un número aleatorio entre ambos números.
   // Ejemplo: in: (inicio: 1, final: 10) ~ out: => 5
   // Tu código:
+  return Math.random() * 10;
 }
 
 function redondear (numero, decimales) {
   // La función recibe un número y debe devolver un número redondeado a la cantidad de decimales indicada.
   // Ejemplo: in: (numero: 1.23456, decimales: 2) ~ out: => 1.23
   // Tu código:
+  // const factor = 10 ** decimales;
+  // return Math.round(numero * factor) / factor;
+  return parseFloat(numero.toFixed(decimales))
 }
 
 // NO TOCAR ESTE CÓDIGO
